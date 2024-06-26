@@ -29,7 +29,7 @@ for dir in os.listdir(TRAIN_ROOT_DIR):
     dir_path = os.path.join(TRAIN_ROOT_DIR, dir)
     if os.path.isdir(dir_path):  # Ensure it's a directory
         for img in os.listdir(dir_path):
-            if img.endswith('.jpg'):  # Check for .jpg files
+            if img.endswith('.jpg'):  # Check for .jpg files , change the extension for different formats
                 ORIGIN = os.path.join(dir_path, img)
                 try:
                     imread(ORIGIN)  # Read the image to check if it's valid
