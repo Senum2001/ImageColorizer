@@ -118,7 +118,7 @@ model.summary()
 
 model.compile(optimizer='adam', metrics=['acc'], loss='mse')
 
-his=model.fit(X_train,Y_train,epochs=5,batch_size=64, steps_per_epoch=X_train.shape[0]//64,verbose=1)
+his=model.fit(X_train,Y_train,epochs=100,batch_size=64, steps_per_epoch=X_train.shape[0]//64,verbose=1)
 
 model.save("./bestmodel.h5")
 
